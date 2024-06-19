@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Code Editor</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="editor-container">
+      <div class="code-inputs">
+        <div class="code-input">
+          <label class="title">html</label>
+          <textarea onkeyup="codeRun()" type="text" id="html-input"></textarea>
+        </div>
+        <div class="code-input">
+          <label class="title">css</label>
+          <textarea onkeyup="codeRun()" type="text" id="css-input"></textarea>
+        </div>
+        <div class="code-input">
+          <label class="title">js</label>
+          <textarea onkeyup="codeRun()" type="text" id="js-input"></textarea>
+        </div>
+      </div>
+
+      <div class="code-output">
+        <label class="title">Output</label>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
